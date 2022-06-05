@@ -1,0 +1,32 @@
+{
+  "name": "seicde_test",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas unitarias de funciones JS a traves de Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monicaps/seicde_test.git"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "testing",
+    "JavaScript"
+  ],
+  "author": "Monica Portillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monicaps/seicde_test/issues"
+  },
+  "homepage": "https://github.com/monicaps/seicde_test#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
