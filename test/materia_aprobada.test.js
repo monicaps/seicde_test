@@ -12,16 +12,11 @@ describe("Pruebas para Materias Aprobadas", () => {
     expect(busqueda.creditos).toContain(mat_aprobada.creditos);
     expect(busqueda.idArea).toContain(mat_aprobada.idArea);
   });
-  test('2.Marca de materias', () => {
+  test('2.Marca de materias en mapa gráfico', () => {
 
-    const mat1= {"clave": "ITIS 004", "creditos": "6", "id": "3", "idArea": "1", "nombre": "Cálculo Diferencial e Integral"}
-    const mat2 = {"calificacion": "7", "creditos": "6", "idArea": "3", "idMateria": "46", "nombreMateria": "Herramientas Web"}
-    const mat3 = {"clave": "ITIS 700", "creditos": "6", "id": "62", "idArea": "6", "nombre": "Desarrollo de Videojuegos"}
+    const cardex_test= {"calificacion": "7", "creditos": "6", "idArea": "3", "idMateria": "46", "nombreMateria": "Herramientas Web"}
+    const ps = MateriasAprobadas.simulaMarcaje(cardex_test)
 
-    const ps = Materias.verMateriasSemestrales()
-
-    expect(ps).toContainEqual(mat1);
-    expect(ps).toContainEqual(mat2);
-    expect(ps).toContainEqual(mat3);
+    expect(ps).toBe(true);
   });
 })
